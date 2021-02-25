@@ -1,1 +1,103 @@
-안녕
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1 {text-align: center;}
+h2 {
+  text-align: center;
+  border-bottom: 5px solid red
+}
+
+fieldset {
+  background-color: #eeeeee;
+}
+
+legend {
+  background-color: pink;
+  color: grey;
+  padding: 5px 10px;
+}
+
+input {
+  margin: 5px;
+}
+
+label {
+  background-color: grey;
+  color: pink;
+}
+
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  animation: myfirst 5s 4;
+  animation-direction: alternate;
+}
+
+@keyframes myfirst {
+  0%   {background: red; left: 0px; top: 0px;}
+  25%  {background: yellow; left: 500px; top: 0px;}
+  50%  {background: blue; left: 500px; top: 200px;}
+  75%  {background: green; left: 0px; top: 200px;}
+  100% {background: red; left: 0px; top: 0px;}
+}
+</style>
+<title>Sehyun</title>
+</head>
+<body>
+
+<h1>test</h1>
+
+<p>문장문장문장</p> 
+<button type="button" onclick="alert('뚜두둥장')">버튼버튼버튼</button>
+
+<form action="/action_page.php">
+ <fieldset>
+  <legend>설문</legend>
+  <label for="name">이름 :</label>
+  <input type="text" id="name" name="name"><br><br>
+  <label for="name">생년월일 :</label>
+  <input type="date" id="birthday" name="birthday"><br><br>
+  <label for="time">시간 :</label>
+  <input type="time" id="time" name="time"><br><br>
+  <p>서버가 입력을 처리하는 방법은 PHP를 알아야된대 이건 더 알아오겠음 따라서 submit 버튼 누르면 에러 뜸</p> 
+  <input type="submit" value="Submit">
+ </fieldset>
+</form>
+
+<form action="/action_page.php">
+  <label for="분리수거">분리수거 종류 선택 :</label>
+  <select name="종류" id="제품을 선택하세요">
+    <option value="종이">종이</option>
+    <option value="플라스틱">플라스틱</option>
+    <option value="유리">유리</option>
+    <option value="캔">캔</option>
+    <option value="병">병</option>
+  </select>
+  <br><br>
+  <p>얘도 submit 버튼 누르면 에러 뜸</p> 
+  <input type="submit" value="Submit">
+</form>
+
+<details>
+  <summary>이거 누르면 목록? 나옴</summary>
+  <ul>
+    <li>종이</li>
+    <li>플라스틱</li>
+    <li>유리</li>
+    <li>캔</li>
+    <li>병</li>
+  </ul>
+</details>
+
+<div></div>
+
+<p><s>퇴근하세요!</s></p>
+<ins>후</ins>
+
+<h2>끝!</h2>
+
+</body>
+</html>
